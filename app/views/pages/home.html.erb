@@ -1,0 +1,58 @@
+<body>
+
+
+  <div class="row">
+    <div id="banner-home" style= "background: linear-gradient(rgba(0, 9, 0, 0.35),rgba(0, 9, 0, 0.35)),url(<%= asset_path 'banner.png' %>); background-size:cover;" class="col-xs-12">
+      <div class="row padded fadeInAndSlideDown">
+        <div>
+          <h1>Découvrez comment retrouver sérénité et confiance face aux défis de votre vie.</h1>
+        </div>
+      </div>
+      <div class="row text-center" style="position: static; padding-top: 90px">
+        <div class="col-xs-12">
+          <div id="trigger1" style="text-align:center;">
+            <%= link_to "#trigger2" do %>
+              <i class="fa fa-angle-down pulse scroll-btn-white" style="font-size: 55px"></i>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid text-center"id="trigger2">
+    <div class="row padded">
+      <div class="col-xs-offset-2 col-xs-8 bordered-orange">
+        <h2>6 bonnes raisons de faire appel à Open Up coaching</h2>
+      </div>
+    </div>
+    <div class="row padded">
+      <div class="card-benefit col-xs-6 col-sm-4">
+        <%= image_tag "trust.png" %>
+        <p>Dans un climat de confiance mutuelle, profond respect et confidentialité, vous profitez d’un moment privilégié pour vous occuper de vous.</p>
+      </div>
+      <div class="card-benefit col-xs-6 col-sm-4">
+        <%= image_tag "trust.png" %>
+        <p>Notre partenariat, basé sur la bienveillance et la co-responsabilité, vous permet de découvrir des solutions adaptées à votre personnalité.</p>
+      </div>
+      <div class="card-benefit col-xs-6 col-sm-4">
+        <%= image_tag "trust.png" %>
+        <p>Grâce à un questionnement personnel, vous prenez du recul sur votre situation, déterminez votre objectif, identifiez vos freins, vos talents et vos forces.</p>
+      </div>
+      <div class="card-benefit col-xs-6 col-sm-4">
+        <%= image_tag "trust.png" %>
+        <p>Avec des méthodes et exercices ludiques et variées, votre créativité va être stimulée pour construire et mettre en œuvre votre plan d’action et atteindre votre objectif.</p>
+      </div>
+      <div class="card-benefit col-xs-6 col-sm-4">
+        <%= image_tag "trust.png" %>
+        <p>Des bénéfices appréciés comme : une meilleure connaissance de vous et de vos besoins, une confiance et une énergie accrues, une plus grande assurance pour atteindre vos buts sur la durée.</p>
+      </div>
+      <div class="card-benefit col-xs-6 col-sm-4">
+        <%= image_tag "trust.png" %>
+        <p>Des séances de 1h à 1h30 espacées de 1 à 3 semaines, en face à face, par téléphone ou par skype, en français ou en anglais pour s’adapter à vos besoins avec flexibilité.</p>
+      </div>
+    </div>
+  </div>
+
+
+</body>

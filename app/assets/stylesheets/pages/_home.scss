@@ -1,0 +1,211 @@
+/* -------------------------------------
+ * CSS code specific to home page
+ * (margin/padding adjustments)
+ * ------------------------------------- */
+#banner-home {
+
+  min-height: 580px;
+  box-shadow: 0 2px 3px $gray;
+  text-align: center;
+  .padded{
+    padding-top: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  h1 {
+    color: white;
+  }
+
+}
+
+.container-fluid{
+  .modified{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+#trigger1{
+
+  bottom: 200px;
+  text-align: center;
+  p:hover{
+    color: white;
+  }
+}
+
+.card-benefit {
+  padding: 1em;
+}
+
+.padded{
+padding-top: 2em;
+}
+
+// Effects
+
+.fadeInAndSlideDown {
+  transform: scale(0);
+  opacity: 0.0;
+  transform: translateY(-20%);
+  animation: fadeInAndSlideDown 2s 0.5s ease forwards;
+  -webkit-animation: fadeInAndSlideDown 2s 0.5s ease forwards;
+  -moz-animation: fadeInAndSlideDown 2s 0.5s ease forwards;
+}
+
+@keyframes fadeInAndSlideDown {
+  0% {
+    transform: scale(0);
+    opacity: 0.0;
+    transform: translateY(-10%);
+    /* start CSS properties */
+  }
+
+  100% {
+    transform: translateY(0%);
+     -webkit-transform: scale(1);
+    opacity: 1;
+    /* end CSS properties */
+  }
+}
+
+@-webkit-keyframes fadeInAndSlideDown {
+  0% {
+    transform: scale(0);
+    opacity: 0.0;
+    transform: translateY(-10%);
+    /* start CSS properties */
+  }
+
+  100% {
+    transform: translateY(0%);
+     -webkit-transform: scale(1);
+    opacity: 1;
+    /* end CSS properties */
+  }
+}
+
+@-moz-keyframes fadeInAndSlideDown {
+  0% {
+    transform: scale(0);
+    opacity: 0.0;
+    transform: translateY(-10%);
+    /* start CSS properties */
+  }
+
+  100% {
+    transform: translateY(0%);
+     -webkit-transform: scale(1);
+    opacity: 1;
+    /* end CSS properties */
+  }
+}
+
+.myfadeIn {
+  opacity: 0.0;
+  animation: myfadeIn 2s 0.5s ease forwards;
+  -webkit-animation: myfadeIn 2s 0.5s ease forwards;
+  -moz-animation: myfadeIn 2s 0.5s ease forwards;
+}
+
+@keyframes myfadeIn {
+  0% {
+
+    opacity: 0.0;
+
+    /* start CSS properties */
+  }
+
+  100% {
+
+    opacity: 1;
+    /* end CSS properties */
+  }
+}
+
+@-webkit-keyframes myfadeIn {
+  0% {
+
+    opacity: 0.0;
+
+    /* start CSS properties */
+  }
+
+  100% {
+
+
+    opacity: 1;
+    /* end CSS properties */
+  }
+}
+
+@-moz-keyframes myfadeIn {
+  0% {
+
+    opacity: 0.0;
+
+    /* start CSS properties */
+  }
+
+  100% {
+
+     -webkit-transform: scale(1);
+    /* end CSS properties */
+  }
+}
+
+.myfadeOut {
+  opacity: 0.0;
+  animation: myfadeOut 2s 0.5s ease forwards;
+  -webkit-animation: myfadeOut 2s 0.5s ease forwards;
+  -moz-animation: myfadeOut 2s 0.5s ease forwards;
+}
+
+@keyframes myfadeOut {
+
+
+  100% {
+
+    opacity: 1;
+    /* end CSS properties */
+  }
+
+  0% {
+
+    opacity: 0.0;
+
+    /* start CSS properties */
+  }
+}
+
+@-webkit-keyframes myfadeOut {
+
+  100% {
+
+    opacity: 1;
+    /* end CSS properties */
+  }
+
+  0% {
+
+    opacity: 0.0;
+
+    /* start CSS properties */
+  }
+}
+
+@-moz-keyframes myfadeOut {
+
+  100% {
+
+    opacity: 1;
+    /* end CSS properties */
+  }
+
+  0% {
+
+    opacity: 0.0;
+
+    /* start CSS properties */
+  }
+}

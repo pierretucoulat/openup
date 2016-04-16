@@ -1,0 +1,40 @@
+<footer class="footer-distributed <%= yield(:footer_class) %>">
+  <div class="row">
+    <div class="col-xs-offset-2 col-xs-8">
+      <div class="row text-center bordered padded">
+        <div class="col-xs-6">
+          <div class="row title-section-footer">
+            <h5>ma boite</h5>
+          </div>
+          <div class="row">
+            <%= link_to apropos_path do %>
+              <p>alors</p>
+            <% end %>
+            <%= link_to temoignages_path do %>
+              <p>cgv</p>
+            <% end %>
+            <%= link_to '#' do %>
+              <p>section 1</p>
+            <% end %>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="row title-section-footer">
+            <h5>Me suivre</h5>
+          </div>
+          <div class="row">
+            <p><%= link_to "https://www.facebook.com/pages/Le-Gastronome-MTL/477179479106260", target:"blank" do %>
+              <%= image_tag "facebook.png", class:"social" %>
+            <% end %></p>
+            <p><%= link_to "https://instagram.com/legastronome_mtl", target:"blank" do %>
+              <%= image_tag "instagram.png", class:"social" %>
+            <% end %></p>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center padded">
+        <p>Développé avec <i class="fa fa-heart-o"></i> par paon agency </p>
+      </div>
+    </div>
+  </div>
+</footer>

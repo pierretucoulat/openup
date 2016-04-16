@@ -1,0 +1,23 @@
+.btn{
+  border-radius: 3px;
+ }
+
+
+  .btn.transparent.orange{
+  border-color: $orange;
+  background-color: transparent;
+  color: $orange;
+  height: 36px;
+  &:hover{
+    background-color: $orange;
+    border-color: $orange;
+    color: white;
+    transition: ease 0.3s;
+  }
+ }
+
+
+ .scroll-btn-white{
+  font-size: 40px;
+  color: white;
+ }

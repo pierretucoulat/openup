@@ -1,0 +1,22 @@
+#banner {
+
+  min-height: 400px;
+  box-shadow: 0 2px 3px $blue;
+
+  .padded{
+  padding-top: 230px;
+  }
+
+  .padded-others{
+    padding-top: 13em;
+  }
+  h1, h2{
+    color: white;
+  }
+  h2{
+    font-weight: 100;
+  }
+  h1{
+    font-weight: 300;
+  }
+}

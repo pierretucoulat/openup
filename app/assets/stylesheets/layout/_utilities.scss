@@ -18,7 +18,11 @@
   background: #aeaeae;
 }
 .bg-blue {
-  background: #00a3e1;
+  background: $blue;
+  color: white;
+  h3, h4, h5{
+    color: white;
+  }
 }
 .bg-dark-blue {
   background: #3b5998;

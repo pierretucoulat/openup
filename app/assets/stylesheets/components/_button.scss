@@ -16,6 +16,18 @@
   }
  }
 
+  .btn.transparent.white{
+  border-color: white;
+  background-color: transparent;
+  color: white;
+  height: 36px;
+  &:hover{
+    background-color: white;
+    border-color: white;
+    color: $blue;
+    transition: ease 0.3s;
+  }
+ }
 
  .scroll-btn-white{
   font-size: 40px;

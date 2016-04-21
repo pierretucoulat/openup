@@ -7,7 +7,7 @@
 // Paddings
 .padded {
   padding-top: 5em;
-  padding-bottom: 5em;
+  padding-bottom: 3em;
 }
 
 // Backgrounds
@@ -28,8 +28,11 @@
   background: #3b5998;
 }
 
-h1, h2, h3, h4, h5, p{
-  color: $blue;
+h1, h2, h3, h4 {
+  color: $green;
+}
+h5, p{
+  color: gray;
 }
 
 .bordered-orange{

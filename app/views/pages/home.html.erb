@@ -59,24 +59,31 @@
         <h2>Coaching particuliers</h2>
       </div>
     </div>
-    <div class="row padded">
-      <div class="col-xs-6 col-sm-3">
-        <p>lalalalala</p>
-        <%= image_tag "sérennité.png", class: "image-section-particuliers" %>
-      </div>
-      <div class="col-xs-6 col-sm-3">
-        <%= image_tag "efficacité.png", class: "image-section-particuliers" %>
-      </div>
-      <div class="col-xs-6 col-sm-3">
-        <%= image_tag "transition.png", class: "image-section-particuliers" %>
-      </div>
-      <div class="col-xs-6 col-sm-3">
-        <%= image_tag "etudiants.png", class: "image-section-particuliers" %>
-      </div>
+    <div class="row">
+      <%= link_to "/monoffre" do %>
+        <div class="col-xs-12 col-sm-6 col-md-3 image-section-particuliers" style="background: url(<%= asset_path 'sérennité.png' %>)">
+          <h3>Développer votre sérénité</h3>
+        </div>
+      <% end %>
+      <%= link_to "/monoffre" do %>
+        <div class="col-xs-12 col-sm-6 col-md-3 image-section-particuliers" style="background: url(<%= asset_path 'efficacité.png' %>)">
+          <h3>Booster votre efficacité pro</h3>
+        </div>
+      <% end %>
+      <%= link_to "/monoffre" do %>
+        <div class="col-xs-12 col-sm-6 col-md-3 image-section-particuliers" style="background: url(<%= asset_path 'transition.png' %>)">
+          <h3>Réussir votre transition de vie</h3>
+        </div>
+      <% end %>
+      <%= link_to "/monoffre" do %>
+        <div class="col-xs-12 col-sm-6 col-md-3 image-section-particuliers" style="background: url(<%= asset_path 'etudiants.png' %>)">
+          <h3>Réussir votre orientation et vos examens</h3>
+        </div>
+      <% end %>
     </div>
   </div>
   <div class="container-fluid text-center">
-    <div class="row bg-blue padded">
+    <div class="row bg-green padded">
       <div class="col-xs-offset-2 col-xs-8">
         <div class="row">
           <h3>Une séance découverte de 45mn offerte</h3>
@@ -85,20 +92,46 @@
           <h4>pour échanger sur votre situation et vos attentes, répondre à vos questions et vous permettre de prendre votre décision en toute sérénité.</h4>
         </div>
         <div class="row">
-          <%= link_to t(".top_call_to_action", default: "s'inscrire maintenant"), "#", class: "btn transparent white"%>
+          <button class="btn transparent white" data-toggle="modal" data-target="#contactform" id="contact-form-button2"><%= "s'inscrire maintenant"%></button>
+
+      <!-- Modal -->
+          <div class="modal fade" id="contactform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <div class="modal-body" style= "background-color: #ECF0F1; border-radius: 3px;">
+                  <body id="public">
+                  <div id="container" class="ltr">
+                    <%= render "shared/form" %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- end Modal -->
         </div>
       </div>
     </div>
   </div>
   <div class="container-fluid">
     <div class="row padded text-center">
-      <div class="col-xs-6">
-        <h4>Votre coach : Claire de Rengervé, coach certifiée ICF</h4>
-        <%= image_tag "photclaire", class: "avatar" %>
-        <p>Claire vous accompagne pour développer votre sérénité et confiance, atteindre vos objectifs et ouvrir de nouvelles perspectives dans votre vie.</p>
+      <div class="col-xs-12 col-sm-6">
+        <div class="row">
+          <div class="col-xs-0 col-sm-1">
+          </div>
+          <div class="col-xs-12 col-sm-10">
+            <h4>Votre coach : Claire de Rengervé, coach certifiée ICF</h4>
+            <%= image_tag "photclaire", class: "avatar" %>
+            <p>Claire vous accompagne pour développer votre sérénité et confiance, atteindre vos objectifs et ouvrir de nouvelles perspectives dans votre vie.</p>
+          </div>
+          <div class="col-xs-0 col-sm-1">
+          </div>
+        </div>
       </div>
-      <div class="col-xs-6">
-      <p>Petit texte descriptif</p>
+      <div class="col-xs-12 col-sm-6 bordered-left-grey-big-devices">
+        <h4>Ils en parlent</h4>
+        <%= render "shared/owlcarousel" %>
       </div>
     </div>
   </div>

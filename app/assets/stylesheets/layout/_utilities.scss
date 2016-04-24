@@ -15,10 +15,12 @@
   background: #4a4a4a;
 }
 .bg-grey {
-  background: #aeaeae;
+  background: #F5F5F5;
 }
-.bg-blue {
-  background: $blue;
+
+
+.bg-green {
+  background: $green;
   color: white;
   h3, h4, h5{
     color: white;
@@ -29,7 +31,7 @@
 }
 
 h1, h2, h3, h4 {
-  color: $green;
+  color: gray;
 }
 h5, p{
   color: gray;
@@ -38,3 +40,16 @@ h5, p{
 .bordered-orange{
    border-bottom: 1px solid $orange;
    }
+
+
+@media screen and (max-width: 768px) {
+  .bordered-left-grey-big-devices{
+    background: #F5F5F5;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bordered-left-grey-big-devices{
+    border-left: gray 1px solid;
+  }
+}

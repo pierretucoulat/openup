@@ -47,10 +47,24 @@
 padding-top: 2em;
 }
 
-.image-section-particuliers{
-  width: 100%;
-  position: relative;
+
+
+.image-section-particuliers {
+  height: 22em;
+  opacity: 0.95;
+  h3{
+    color: white;
+    padding: 25%;
+    Text-align: center;
+  }
 }
+
+.image-section-particuliers:hover {
+opacity: 1;
+transition: ease 0.3s;
+}
+
+
 
 // Effects
 

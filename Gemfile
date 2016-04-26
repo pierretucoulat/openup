@@ -45,6 +45,7 @@ gem 'owlcarousel-rails', '~> 1.1.3.3'
 
 group :development, :test do
 
+  gem 'sqlite3'
   #IRB in your browser each time you get an error
   gem "better_errors"
   gem "binding_of_caller"

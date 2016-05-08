@@ -2,7 +2,7 @@
 
 
   <div class="row">
-    <div id="banner-home" style= "background: linear-gradient(rgba(0, 9, 0, 0.35),rgba(0, 9, 0, 0.35)),url(<%= asset_path 'banner.png' %>); background-size:cover;" class="col-xs-12">
+    <div id="banner-home" style= "background: linear-gradient(rgba(0, 9, 0, 0.15),rgba(0, 9, 0, 0.15)),url(<%= asset_path 'banner.png' %>); background-size:cover;" class="col-xs-12">
       <div class="row padded fadeInAndSlideDown">
         <div>
           <h1>Découvrez comment retrouver sérénité et confiance face aux défis de votre vie.</h1>
@@ -19,11 +19,69 @@
       </div>
     </div>
   </div>
+  <div class="container-fluid text-center">
+    <div class="row padded">
+      <div class="col-xs-offset-2 col-xs-8 bordered-orange">
+        <h2>Coaching particuliers :</h2>
+      </div>
+    </div>
+    <div class="row">
+      <%= link_to "/monoffre" do %>
+        <div class="col-xs-12 col-sm-6 col-md-3 image-section-particuliers" style="background: url(<%= asset_path 'sérennité.png' %>)">
+          <h3>Développer votre sérénité</h3>
+          <p>Gérer son stress</p>
+          <p>Prévenir les burn-outs</p>
+          <p>Améliorer son équilibre de vie</p>
+        </div>
+      <% end %>
+      <%= link_to "/monoffre" do %>
+        <div class="col-xs-12 col-sm-6 col-md-3 image-section-particuliers" style="background: url(<%= asset_path 'efficacité.png' %>)">
+          <h3>Booster votre efficacité pro</h3>
+          <p>Améliorer sa communication, son management,sa performance et sa motivation</p>
+        </div>
+      <% end %>
+      <%= link_to "/monoffre" do %>
+        <div class="col-xs-12 col-sm-6 col-md-3 image-section-particuliers" style="background: url(<%= asset_path 'transition.png' %>)">
+          <h3>Réussir votre transition de vie</h3>
+          <p>Trouver sa voie,un nouveau projet professionnel</p>
+          <p>Partir en expatriation</p>
+        </div>
+      <% end %>
+      <%= link_to "/monoffre" do %>
+        <div class="col-xs-12 col-sm-6 col-md-3 image-section-particuliers" style="background: url(<%= asset_path 'etudiants.png' %>)">
+          <h3>Orientation jeunes</h3>
+          <p>Choisir son orientation</p>
+          <p>Développer sa confiance</p>
+          <p>Réussir ses examens</p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="row">
 
+    <div style= "background: url(<%= asset_path 'pro.png' %>); background-size:cover;" class="col-xs-12">
+      <div class="row padded banner-pro">
+        <h2><u>Coaching Entreprises :</u></h2>
+        <h3>Développez le bien-être de vos salariés</h3>
+        <div class="row padded text-center">
+          <div class="col-xs-4" style="color: white;">
+            <h4>Gestion du stress</h4>
+          </div>
+          <div class="col-xs-4">
+            <h4>Efficacité et motivation</h4>
+          </div>
+          <div class="col-xs-4">
+            <h4>Expatriation et transition</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
   <div class="container-fluid text-center"id="trigger2">
     <div class="row padded">
       <div class="col-xs-offset-2 col-xs-8 bordered-orange">
-        <h2>6 bonnes raisons de faire appel à Open Up coaching</h2>
+        <h3>6 bonnes raisons de faire appel à Open Up coaching & consulting</h3>
       </div>
     </div>
     <div class="row padded">
@@ -53,46 +111,15 @@
       </div>
     </div>
   </div>
+
   <div class="container-fluid text-center">
-    <div class="row padded">
-      <div class="col-xs-offset-2 col-xs-8 bordered-orange">
-        <h2>Coaching particuliers</h2>
-      </div>
-    </div>
-    <div class="row">
-      <%= link_to "/monoffre" do %>
-        <div class="col-xs-12 col-sm-6 col-md-3 image-section-particuliers" style="background: url(<%= asset_path 'sérennité.png' %>)">
-          <h3>Développer votre sérénité</h3>
-        </div>
-      <% end %>
-      <%= link_to "/monoffre" do %>
-        <div class="col-xs-12 col-sm-6 col-md-3 image-section-particuliers" style="background: url(<%= asset_path 'efficacité.png' %>)">
-          <h3>Booster votre efficacité pro</h3>
-        </div>
-      <% end %>
-      <%= link_to "/monoffre" do %>
-        <div class="col-xs-12 col-sm-6 col-md-3 image-section-particuliers" style="background: url(<%= asset_path 'transition.png' %>)">
-          <h3>Réussir votre transition de vie</h3>
-        </div>
-      <% end %>
-      <%= link_to "/monoffre" do %>
-        <div class="col-xs-12 col-sm-6 col-md-3 image-section-particuliers" style="background: url(<%= asset_path 'etudiants.png' %>)">
-          <h3>Réussir votre orientation et vos examens</h3>
-        </div>
-      <% end %>
-    </div>
-  </div>
-  <div class="container-fluid text-center">
-    <div class="row bg-green padded">
+    <div class="row bg-blue padded">
       <div class="col-xs-offset-2 col-xs-8">
         <div class="row">
-          <h3>Une séance découverte de 45mn offerte</h3>
+          <h4>Envie d’en savoir plus sur mon offre ?</h4>
         </div>
         <div class="row">
-          <h4>pour échanger sur votre situation et vos attentes, répondre à vos questions et vous permettre de prendre votre décision en toute sérénité.</h4>
-        </div>
-        <div class="row">
-          <button class="btn transparent white" data-toggle="modal" data-target="#contactform" id="contact-form-button2"><%= "s'inscrire maintenant"%></button>
+          <button class="btn transparent white" data-toggle="modal" data-target="#contactform" id="contact-form-button2"><%= "Contactez-moi !"%></button>
 
       <!-- Modal -->
           <div class="modal fade" id="contactform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -122,7 +149,7 @@
           </div>
           <div class="col-xs-12 col-sm-10">
             <h4>Votre coach : Claire de Rengervé, coach certifiée ICF</h4>
-            <%= image_tag "photclaire", class: "avatar" %>
+            <%= image_tag "photclaire.png", class: "avatar" %>
             <p>Claire vous accompagne pour développer votre sérénité et confiance, atteindre vos objectifs et ouvrir de nouvelles perspectives dans votre vie.</p>
           </div>
           <div class="col-xs-0 col-sm-1">

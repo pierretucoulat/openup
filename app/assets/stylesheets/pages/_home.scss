@@ -4,11 +4,11 @@
  * ------------------------------------- */
 #banner-home {
 
-  min-height: 580px;
+  min-height: 520px;
   box-shadow: 0 2px 3px $gray;
   text-align: center;
   .padded{
-    padding-top: 10%;
+    padding-top: 15%;
     padding-left: 15%;
     padding-right: 15%;
   }
@@ -52,19 +52,57 @@ padding-top: 2em;
 .image-section-particuliers {
   height: 22em;
   opacity: 0.95;
+  border: solid white 3px;
   h3{
     color: white;
     padding: 25%;
     Text-align: center;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+  }
+  p{
+    opacity: 0;
+    transition: opacity ease 0.3s;
+    color: white;
+    text-align: center;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
   }
 }
 
 .image-section-particuliers:hover {
 opacity: 1;
 transition: ease 0.3s;
+  h3{
+    -webkit-transform: translate(0,-2em);
+    -moz-transform: translate(0,-2em);
+    -o-transform: translate(0,-2em);
+    -ms-transform: translate(0,-2em);
+    transform: translate(0,-2em);
+  }
+  p{
+    -webkit-transform: translate(0,-5em);
+    -moz-transform: translate(0,-5em);
+    -o-transform: translate(0,-5em);
+    -ms-transform: translate(0,-5em);
+    transform: translate(0,-5em);
+    opacity: 1;
+  }
 }
 
 
+
+.banner-pro{
+  border: solid white 3px;
+  min-height: 20em;
+  padding-top: 6em;
+  h3,h2,p,h5, h4{
+    color: white;
+    text-align: center;
+  }
+}
 
 // Effects
 

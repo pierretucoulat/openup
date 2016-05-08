@@ -4,6 +4,14 @@
  * Feel free to change them and create your own
  * ------------------------------------- */
 
+h1, h2, h3, h4 {
+  color: gray;
+}
+h5, p{
+  color: gray;
+}
+
+
 // Paddings
 .padded {
   padding-top: 5em;
@@ -30,12 +38,14 @@
   background: #3b5998;
 }
 
-h1, h2, h3, h4 {
-  color: gray;
+.bg-blue{
+  background: #3A444F;
+    h3, h4, h5{
+    color: white;
+  }
 }
-h5, p{
-  color: gray;
-}
+
+
 
 .bordered-orange{
    border-bottom: 1px solid $orange;

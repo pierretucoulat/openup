@@ -29,8 +29,11 @@
     <%= link_to '/apropos', class: "navbar-wagon-item navbar-wagon-link" do %>
       A propos
     <% end %>
-    <%= link_to '/monoffre', class: "navbar-wagon-item navbar-wagon-link" do %>
-      Mon offre
+    <%= link_to '/offreparticuliers', class: "navbar-wagon-item navbar-wagon-link" do %>
+      Offre particuliers
+    <% end %>
+    <%= link_to '/offreentreprises', class: "navbar-wagon-item navbar-wagon-link" do %>
+      Offre entreprises
     <% end %>
     <%= link_to '/temoignages', class: "navbar-wagon-item navbar-wagon-link" do %>
       Témoignages
@@ -44,9 +47,26 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
+        <li>
+          <%= link_to '/apropos', class: "navbar-wagon-item navbar-wagon-link" do %>
+            A propos
+          <% end %>
+        </li>
+        <li>
+          <%= link_to '/offreparticuliers', class: "navbar-wagon-item navbar-wagon-link" do %>
+            Offre particuliers
+          <% end %>
+        </li>
+        <li>
+          <%= link_to '/offreentreprises', class: "navbar-wagon-item navbar-wagon-link" do %>
+            Offre entreprises
+          <% end %>
+        </li>
+        <li>
+          <%= link_to '/temoignages', class: "navbar-wagon-item navbar-wagon-link" do %>
+            Témoignages
+          <% end %>
+        </li>
       </ul>
     </div>
   </div>

@@ -1,7 +1,18 @@
 .btn{
   border-radius: 3px;
  }
-
+  .btn.blue{
+  border-color: white;
+  background-color: $blue;
+  color: white;
+  height: 36px;
+  &:hover{
+    background-color: white;
+    border-color: $blue;
+    color: grey;
+    transition: ease 0.3s;
+  }
+ }
 
   .btn.transparent.orange{
   border-color: $orange;

@@ -23,7 +23,11 @@ h5, p{
   background: #4a4a4a;
 }
 .bg-grey {
-  background: #F5F5F5;
+  background: #F6F8F9;
+}
+
+.bg-grey-gradient{
+  background:linear-gradient(to bottom, white, #F6F8F9);
 }
 
 
@@ -49,6 +53,10 @@ h5, p{
 
 .bordered-orange{
    border-bottom: 1px solid $orange;
+   }
+
+.bordered-blue{
+   border-bottom: 1px solid #3A444F;
    }
 
 

@@ -98,9 +98,31 @@ transition: ease 0.3s;
   border: solid white 3px;
   min-height: 20em;
   padding-top: 6em;
-  h3,h2,p,h5, h4{
+  h3,h2,h5,p{
     color: white;
     text-align: center;
+  }
+  h4{
+    opacity: 0;
+    transition: opacity ease 0.3s;
+    color: white;
+    text-align: center;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+  }
+}
+
+.banner-pro:hover {
+opacity: 1;
+transition: ease 0.3s;
+h4{
+    -webkit-transform: translate(0,-1em);
+    -moz-transform: translate(0,-1em);
+    -o-transform: translate(0,-1em);
+    -ms-transform: translate(0,-1em);
+    transform: translate(0,-1em);
+    opacity: 1;
   }
 }
 
